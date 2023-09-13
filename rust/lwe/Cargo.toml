@@ -1,0 +1,9 @@
+[package]
+name = "basic-lwe"
+version = "0.1.0"
+authors = ["AlexFW"]
+edition = "2021"
+
+[lib]
+crate-type = ["ndarray"]
+bench = false
