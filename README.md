@@ -18,5 +18,8 @@
 - [ ] Ring-LWE
 - [ ] Other problems based on LWE
 
-- [ ] PROFIT
 
+
+##### Sources
+- Handbook of Applied Cryptography (Menezes, van Oorschot, Vanstone; '97)
+- Bill Buchanan OBE

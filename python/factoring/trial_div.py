@@ -5,15 +5,15 @@ import numpy as np
 # tests for primality each time.
 def trial_division(n):
     prime = 2  # primes by which n is divided
-    is_composite = True  # primality check of the newly obtained number
+    # is_composite = True  # primality check of the newly obtained number
     factorization = []  # the wanted factorization
 
-    while is_composite:
+    while is_composite(n):
+
         if n % prime == 0:
             factorization.append(prime)
             n = int(n / prime)
 
-            is_composite = isComposite(n)
         else:
             prime = getNextPrime(prime)
 
@@ -26,12 +26,12 @@ def trial_division(n):
 def getNextPrime(prime):
     n = prime + 1
 
-    while isComposite(n):
+    while is_composite(n):
         n += 1
     return n
 
 
-def isComposite(n):
+def is_composite(n):
     for i in range(2, n):
         if n % i == 0:
             return True
