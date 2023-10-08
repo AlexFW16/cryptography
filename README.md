@@ -1,6 +1,16 @@
-## Trying to find math projects to work on
+# Repo for learning cryptography
 
-#### Learning With Errors (LWE)
+### Basics
+
+#### Factoring
+
+- [x] Trial Division algorithm
+- [ ] Pollard's rho factoring algorithm
+- [ ] ...
+
+
+
+### Learning With Errors (LWE)
 - [x] Basic understanding of LWE
 - [x] First easy implementation (one dimensional matrix), so we are dealing with
   equations in the form of $13s = 4$.
