@@ -1,4 +1,5 @@
 import numpy as np
+from util import is_composite, get_next_prime
 
 
 # naive implementation, divides by ascending prime numbers and
@@ -15,24 +16,10 @@ def trial_division(n):
             n = int(n / prime)
 
         else:
-            prime = getNextPrime(prime)
+            prime = get_next_prime(prime)
 
     if n != 1:  # otherwise, n was prime and 1 would be appended
         factorization.append(n)
 
     return factorization
 
-
-def getNextPrime(prime):
-    n = prime + 1
-
-    while is_composite(n):
-        n += 1
-    return n
-
-
-def is_composite(n):
-    for i in range(2, n):
-        if n % i == 0:
-            return True
-    return False

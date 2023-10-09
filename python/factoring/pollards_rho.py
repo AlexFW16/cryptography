@@ -1,4 +1,5 @@
 import numpy as np
+from util import is_composite
 
 def pollard(n):
     a, b = 2, 2 # 2 pointers for finding the cycle
@@ -37,10 +38,3 @@ def pollard_recursive(n):
     factorization.append(n)
     return factorization
     
-def is_composite(n):
-    for i in range(2, n):
-        if n % i == 0:
-            return True
-    return False
-
-
