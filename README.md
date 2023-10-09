@@ -5,9 +5,9 @@
 #### Factoring
 
 - [x] Trial Division algorithm
-- [ ] Pollard's rho factoring algorithm
-- [ ] ...
-
+- [x] Pollard's rho factoring algorithm
+- [x] Pollard's p-1 factoring algorithm
+- [ ] $\dots$
 
 
 ### Learning With Errors (LWE)
